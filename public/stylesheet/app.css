@@ -8,10 +8,10 @@ body{
     width: 90%;
     height: 50%;
     /*border: 2px solid rgba(205,190,112, 2.0);*/
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5 );
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1 );
     border-radius: 70px;
-	margin-top: 50px;
-	background: #AF7AC5;
+	  margin-top: 50px;
+	/*background: #AF7AC5;*/
 }
 
 .content{
