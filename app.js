@@ -9,7 +9,7 @@ var express = require('express'),
 
 var url = process.env.DATABASEURL || "mongodb://localhost/url_shortner"
 mongoose.connect(url);
-//mongodb://<dbuser>:<dbpassword>@ds159208.mlab.com:59208/fcc_project1
+
 
 //mongoose.connect('mongodb://urlshortner:fcc1@ds159208.mlab.com:59208/fcc_project1');
 
