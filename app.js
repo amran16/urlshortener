@@ -10,6 +10,7 @@ var express = require('express'),
 
 //mongoose.connect('mongodb://urlshortner:fcc1@ds159208.mlab.com:59208/fcc_project1');
 
+// set the heroku config variable
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/url_shortner');
 
 //Set static path
