@@ -10,7 +10,7 @@ var express = require('express'),
 
 //mongoose.connect('mongodb://urlshortner:fcc1@ds159208.mlab.com:59208/fcc_project1');
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost/url_shortner');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/url_shortner');
 
 //Set static path
 app.use(express.static(__dirname + '/public'));
