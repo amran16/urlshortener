@@ -1,0 +1,33 @@
+<% include partials/header %>
+        <div class='container'>
+         <div class='row'>
+             <div class='content'>
+            <div>
+            <h1>URL Shortner Microservice</h1>
+          </div>
+          <div>
+             <h3>User Stories</h3>
+              <ol>
+                <li>When a valid URL is entered, a shortened URL is generated and displayed in a JSON form</li>
+                <li>When that shortened URL is visited, it redirects to the original link</li>
+                <li>If an invalid URL is entered, an error message is sent</li>
+              </ol>
+           </div>
+                <div>
+                    <h3>Detailed Examples: </h3>
+                </div>
+             </div>
+
+                <div>
+                    <ul>
+                    <li> <strong>Input URL: </strong><code>https://fierce-wave-87280.herokuapp.com/new/https://www.google.com</code></li>
+                    <li><strong>Output Response: </strong><code>{ "original_url":"http://www.google.com", "short_url":"https://fierce-wave-87280.herokuapp.com/HyRjyM1Ux" }</code></li>
+                    <li><strong>Shortened URL:</strong> <code>https://fierce-wave-87280.herokuapp.com//HyRjyM1Ux</code><strong> Redirects to the main URL: </strong><code>https://www.google.com</code></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+            <footer>
+              <p class='footer'><a href="https://www.freecodecamp.com/challenges/url-shortener-microservice">FCC Project. </a> done by Maryam Gulaid</p>
+        </footer>
+    <% include partials/footer %>
