@@ -5,21 +5,8 @@ var express = require('express'),
     path = require('path'),
     app = express();
 
-
-
-var url = process.env.DATABASEURL || "mongodb://localhost/url_shortner"
-mongoose.connect(url);
-
-
-//mongoose.connect('mongodb://urlshortner:fcc1@ds159208.mlab.com:59208/fcc_project1');
-
-//console.log(process.env.DATABASEURL); //this is coming from actual Server we're running on
-
-// set the heroku config variable
-//mongoose.connect( 'mongodb://localhost/url_shortner' || process.env.MONGODB_URI );
-
-//mongoose.connect('mongodb://localhost/url_shortner');
-//mongoose.connect(process.env.DATABASEURL);
+//set the heroku config variable
+ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/url_shortner');
 
 //Set static path
 app.use(express.static(__dirname + '/public'));
