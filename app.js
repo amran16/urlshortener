@@ -19,7 +19,7 @@ mongoose.connect(url);
 //mongoose.connect( 'mongodb://localhost/url_shortner' || process.env.MONGODB_URI );
 
 //mongoose.connect('mongodb://localhost/url_shortner');
- //mongoose.connect(process.env.DATABASEURL);
+//mongoose.connect(process.env.DATABASEURL);
 
 //Set static path
 app.use(express.static(__dirname + '/public'));
@@ -83,12 +83,12 @@ app.get('/:short', function(req, res, next){
       if(err){
         res.send('Try again!')
       }else if(answer !== null) {
-        res.redirect(answer.original_url)
+        res.redirect(answer.original_url);
       }
     });
   });
 
 
-  app.listen(3000, function(){
+  app.listen(process.env.PORT || 3000, function(){
       console.log("Server running on port 3000");
   });
