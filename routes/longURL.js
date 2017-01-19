@@ -20,8 +20,8 @@ router.get('/:url(*)', function(req, res, next) {
           short_url: shortid.generate()
         }, function(err, result) {
           if (err) return next(err);
-          var short = 'https://maryamnumbertwo.herokuapp.com/' + result.short_url
-          var data = {original_url: result.original_url, short_url: short};
+          var short = 'https://maryamnumbertwo.herokuapp.com/' + result.short_url;
+          var data = { original_url: result.original_url, short_url: short};
           res.send({ success: true, message: 'created new short url!', result: data});
         });
       } else {
