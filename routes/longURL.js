@@ -24,9 +24,7 @@ router.get('/:url(*)', function(req, res, next) {
           var data = { original_url: result.original_url, short_url: short};
           res.send({ success: true, message: 'created new short url!', result: data});
         });
-      } else {
-        res.send({ success: true, message: 'found existing record', result: url });
-      }
+      } 
     });
   });
 });
